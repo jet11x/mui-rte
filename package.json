@@ -1,6 +1,9 @@
 {
-  "name": "@tetra-insights/next-rte",
-  "version": "3.0.0",
+  "name": "@jet11x/mui-rte",
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/"
+  },
+  "version": "3.0.1",
   "description": "Material-UI Rich Text Editor and Viewer",
   "keywords": [
     "material-ui",
@@ -17,43 +20,46 @@
     "build": "tsc",
     "watch": "tsc --watch"
   },
-  "author": "Erik Lopez",
+  "author": {
+    "name": "jet11x",
+    "url": "https://github.com/jet11x"
+  },
   "license": "MIT",
   "devDependencies": {
+    "@babel/core": "7.18.2",
     "@emotion/react": "11.9.3",
     "@emotion/styled": "11.9.3",
     "@mui/icons-material": "5.8.3",
-    "@mui/material": "5.8.3",
-    "@mui/styles": "5.8.3",
+    "@mui/material": "5.10.13",
+    "@mui/styles": "5.10.10",
     "@types/react": "17.0.45",
     "@types/react-dom": "17.0.17",
     "@webpack-cli/serve": "1.6.1",
-    "@babel/core": "7.18.2",
     "acorn": "8.7.1",
+    "bufferutil": "4.0.6",
     "cross-env": "^7.0.3",
     "eslint": "8.17.0",
     "react": "^17.0.0",
     "react-dom": "^17.0.0",
-    "typescript": "4.7.3",
     "ts-loader": "9.3.0",
+    "typescript": "4.8.4",
+    "utf-8-validate": "5.0.9",
     "webpack": "5.73.0",
     "webpack-cli": "4.9.2",
-    "webpack-dev-server": "4.9.2",
-    "bufferutil": "4.0.6",
-    "utf-8-validate": "5.0.9"
+    "webpack-dev-server": "4.9.2"
   },
   "peerDependencies": {
-    "@mui/material": "^5.0.0",
     "@mui/icons-material": "^5.0.0",
+    "@mui/material": "^5.0.0",
     "@mui/styles": "^5.0.0",
     "react": "^17.0.0",
     "react-dom": "^17.0.0"
   },
   "dependencies": {
-    "@types/draft-js": "^0.11.5",
-    "classnames": "^2.3.1",
+    "@types/draft-js": "0.11.9",
+    "classnames": "^2.3.2",
     "draft-js": "^0.11.7",
-    "immutable": "^4.0.0"
+    "immutable": "4.1.0"
   },
   "files": [
     "dist",
@@ -61,16 +67,12 @@
     "index.d.ts"
   ],
   "types": "index.d.ts",
-  "homepage": "https://github.com/tetra-insights/mui-rte#readme",
+  "homepage": "https://github.com/jet11x/mui-rte/mui-rte#readme",
   "repository": {
     "type": "git",
-    "url": "https://github.com/tetra-insights/mui-rte.git"
+    "url": "git@github.com:jet11x/mui-rte.git"
   },
   "bugs": {
-    "url": "https://github.com/tetra-insights/mui-rte/issues"
-  },
-  "author": {
-    "name": "Tetra Insights",
-    "url": "https://www.tetrainsights.com"
+    "url": "https://github.com/jet11x/mui-rte/mui-rte/issues"
   }
 }

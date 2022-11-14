@@ -47,17 +47,21 @@ const getSelectionInfo = (editorState: EditorState): TSelectionInfo => {
  */
 const removeBlockFromMap = (editorState: EditorState, block: ContentBlock): ContentState => {
     const contentState = editorState.getCurrentContent()
-    const removeBlockContentState = Modifier.removeRange(
-        contentState,
-        new SelectionState({
+    const selectionState = SelectionState.createEmpty(block.getKey())
+        .merge({
             anchorKey: block.getKey(),
             anchorOffset: 0,
             focusKey: block.getKey(),
             focusOffset: block.getLength(),
-        }),
+        })
+    const removeBlockContentState = Modifier.removeRange(
+        contentState,
+        selectionState,
         'backward'
     )
     const blockMap = removeBlockContentState.getBlockMap().delete(block.getKey())
+    // TODO: fix rather than ignore?
+    // @ts-ignore
     return removeBlockContentState.merge({
         blockMap,
         selectionAfter: contentState.getSelectionAfter()

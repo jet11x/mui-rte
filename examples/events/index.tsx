@@ -11,11 +11,11 @@ const change = (state: EditorState) => {
     // https://draftjs.org/docs/api-reference-editor-state
     //
     // Get current selection
-    console.log(state.getSelection())
+    console.log('state.getSelection(): ', state.getSelection())
     // Get current content
-    console.log(JSON.stringify(convertToRaw(state.getCurrentContent())))
+    console.log('JSON.stringify(convertToRaw(state.getCurrentContent())):', JSON.stringify(convertToRaw(state.getCurrentContent())))
     // Get current text
-    console.log(state.getCurrentContent().getPlainText())
+    console.log('sate.getCurrentContent().getPlainText():', state.getCurrentContent().getPlainText())
     // Check if editor is empty
     if (!state.getCurrentContent().hasText()) {
         console.log("empty")

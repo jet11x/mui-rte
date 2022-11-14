@@ -170,7 +170,8 @@ const listStyles = {
 const styles = (theme: Theme & TMUIRichTextEditorStyles) => createStyles({
     root: theme?.overrides?.MUIRichTextEditor?.root || {},
     container: theme?.overrides?.MUIRichTextEditor?.container || {
-        margin: theme.spacing(1, 0, 0, 0),
+        //TODO: investigate why this was causing issues
+        //margin: theme.spacing(1, 0, 0, 0),
         position: "relative",
         fontFamily: theme.typography.body1.fontFamily,
         fontSize: theme.typography.body1.fontSize,
