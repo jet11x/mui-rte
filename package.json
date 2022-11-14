@@ -4,7 +4,7 @@
     "registry": "https://npm.pkg.github.com/"
   },
   "license":  "MIT",
-  "version": "3.0.2",
+  "version": "3.0.4",
   "description": "Material-UI Rich Text Editor and Viewer",
   "keywords": [
     "material-ui",
@@ -15,7 +15,10 @@
     "text editor",
     "draft-js"
   ],
-  "main": "index.js",
+  "main": "dist/index.js",
+  "files": [
+    "dist/index.js"
+  ],
   "scripts": {
     "serve": "cross-env webpack-dev-server --mode development",
     "build": "tsc",
