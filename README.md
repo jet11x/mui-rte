@@ -6,6 +6,11 @@ The Material-UI Rich Text Editor and Viewer
 
 **mui-rte** is a complete text editor and viewer for the MUI library (formerly Material-UI) based on `draft-js` and written in Typescript. It is ready to use out of the box yet supports user defined blocks, styles, autocomplete strategies, async/sync custom atomic blocks, callbacks, and decorators as well as toolbar and theme customization to enhance the editor to all needs.
 
+## Change to niuware/mui-rte repository
+
+This fork was created as the origal repo wouldn't build and I wanted
+make some small changes.
+
 ## Installation
 
 ```

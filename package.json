@@ -3,7 +3,8 @@
   "publishConfig": {
     "registry": "https://npm.pkg.github.com/"
   },
-  "version": "3.0.1",
+  "license":  "MIT",
+  "version": "3.0.2",
   "description": "Material-UI Rich Text Editor and Viewer",
   "keywords": [
     "material-ui",
